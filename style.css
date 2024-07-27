@@ -1,0 +1,61 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+@font-face {
+    font-family: 'face';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: 'face';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: 'face';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'face';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+*{
+    box-sizing: border-box;
+    font-family: 'face';
+}
+body{
+    background: var(--OffBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .card{
+    width: 40%;
+    border-radius: 20px ;
+    text-align: center;
+    background: var(--DarkGrey);
+}
+body .card .logo img{
+    border-radius: 50%;
+    margin: 25px;
+    width: 150px;
+}
+body .card .text1 h1{color:var(--White);}
+body .card .text1 .text2 {color: var(--Green);} 
+body .card .text1 p{color: var(--White);}
+body .card .link a{
+    display: block;
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Grey);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    transition: all 0.5s;
+}
+ body .card .link a:hover{
+    background-color: var(--Green);
+    color: #000;
+  }
